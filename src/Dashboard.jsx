@@ -4,6 +4,7 @@ import "./Dashboard.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useLanguage } from "./LanguageContext";
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   const { lang, toggleLanguage } = useLanguage(); // ✅ include toggleLanguage
@@ -76,11 +77,11 @@ export default function Dashboard() {
                   ? "To get your SkillsTab certificate, you must Learn from an Expert."
                   : "Kugira ngo ubone impamyabumenyi ya SkillsTab, ugomba kuba warigishijwe n'inzobere."}
               </p>
-              <a href="/experts">
-                <button className="experts-btn">
-                  {lang === "en" ? "Learn from Experts" : "Igishwa n'inzobere"}
-                </button>
-              </a>
+              <Link to="/experts">
+  <button className="experts-btn">
+    {lang === "en" ? "Learn from Experts" : "Igishwa n'inzobere"}
+  </button>
+</Link>
               <div className="certificate-template">
                 <p>
                   {lang === "en"
