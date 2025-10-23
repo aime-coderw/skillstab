@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./CourseDetail.css";
+import { Link } from "react-router-dom";
 
 export default function CourseDetail() {
   const { category, courseSlug } = useParams();
@@ -69,7 +70,7 @@ export default function CourseDetail() {
           "Store properly: keep bread in breathable bags, cakes in airtight containers, and pastries in a cool, dry place. Serve with love and creativity!",
       }
     ],
-    pdf: "/src/assets/Bakers-Choice-Recipe-Book.pdf",
+    pdf: "/pdfs/Bakers-Choice-Recipe-Book.pdf",
     video: "https://www.youtube.com/watch?v=vKTBBc13o88",
     duration: "2 hours 30 minutes",
     difficulty: "Beginner–Intermediate",
@@ -97,7 +98,7 @@ export default function CourseDetail() {
       { step: "Intambwe 8", details: "Reka bikonje mbere yo kubihindura cyangwa kubishyiraho decoration. Ku cake, ushobora gushyiraho cream, icing n'ibindi binyaburyohe." },
       { step: "Intambwe 9", details: "Bibike neza mu gikoresho gifunze neza (airtight container) kugira ngo bigumane ubwiza n’uburyohe, cyangwa ubishyire muri firigo niba bikenewe." },
     ],
-    pdf: "/src/assets/Bakers-Choice-Recipe-Book.pdf",
+    pdf: "/pdfs/Bakers-Choice-Recipe-Book.pdf",
     video: "https://www.youtube.com/watch?v=DZEubGJj6as",
      duration: "2 hours 30 minutes",
     difficulty: "Beginner–Intermediate",
@@ -167,7 +168,7 @@ export default function CourseDetail() {
       "Measuring cups and spoons",
       "Plates and serving dishes"
     ],
-    pdf: "/src/assets/cookbook.pdf",
+    pdf: "/pdfs/cookbook.pdf",
     video: "https://www.youtube.com/watch?v=PuSy66cS8HE",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -226,7 +227,7 @@ export default function CourseDetail() {
       "Ibipimo (ibikombe, ibiyiko)",
       "Amasahani n’ahakorerwa"
     ],
-    pdf: "/src/assets/cookbook.pdf",
+    pdf: "/pdfs/cookbook.pdf",
     video: "https://www.youtube.com/watch?v=PuSy66cS8HE",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -282,7 +283,7 @@ export default function CourseDetail() {
       "Boiling pot for blanching",
       "Sterilizing equipment"
     ],
-    pdf: "/src/assets/267109.pdf",
+    pdf: "/pdfs/267109.pdf",
     video: "https://www.youtube.com/watch?v=kx2vo3LKe7Y",
     duration: "2 hours",
     difficulty: "Beginner–Intermediate"
@@ -334,7 +335,7 @@ export default function CourseDetail() {
       "Ibipimo (ibikombe, ibiyiko)",
       "Igisuperi",
     ],
-    pdf: "/src/assets/267109.pdf",
+    pdf: "/pdfs/267109.pdf",
     video: "https://www.youtube.com/watch?v=kx2vo3LKe7Y",
     duration: "2 hours",
     difficulty: "Beginner–Intermediate"
@@ -389,7 +390,7 @@ export default function CourseDetail() {
       "Glasses or cups",
       "Optional: yogurt, milk, sweeteners, ice, seeds, mint leaves"
     ],
-    pdf: "/src/assets/juice-making.pdf",
+    pdf: "/pdfs/juice-making.pdf",
     video: "https://www.youtube.com/watch?v=w6IjwKOB_t8",
     duration: "1 hour 30 minutes",
     difficulty: "Beginner"
@@ -441,7 +442,7 @@ export default function CourseDetail() {
       "Ibikombe cyangwa ibyombo byo kunyweramo",
       "Optional: yogurt, amata, isukari, ice, imbuto, amashami ya mint"
     ],
-    pdf: "/src/assets/juice-making.pdf",
+    pdf: "/pdfs/juice-making.pdf",
     video: "https://www.youtube.com/watch?v=w6IjwKOB_t8",
     duration: "1 hour 30 minutes",
     difficulty: "Beginner"
@@ -501,7 +502,7 @@ export default function CourseDetail() {
       "Cups and saucers",
       "Optional: cocoa powder, cinnamon, syrups"
     ],
-    pdf: "/src/assets/coffee-brewing.pdf",
+    pdf: "/pdfs/coffee-brewing.pdf",
     video: "https://www.youtube.com/watch?v=VB65k0gwriU",
     duration: "2 hours",
     difficulty: "Beginner–Intermediate"
@@ -559,7 +560,7 @@ export default function CourseDetail() {
       "Ibyombo byo kunyweramo",
       "Optional: cocoa powder, cinnamon, syrups"
     ],
-    pdf: "/src/assets/coffee-brewing.pdf",
+    pdf: "/pdfs/coffee-brewing.pdf",
     video: "https://www.youtube.com/watch?v=VB65k0gwriU",
     duration: "2 hours",
     difficulty: "Beginner–Intermediate"
@@ -620,7 +621,7 @@ export default function CourseDetail() {
       "Staff uniforms",
       "Cleaning supplies"
     ],
-    pdf: "/src/assets/IRFU_event-management-large.pdf",
+    pdf: "/pdfs/IRFU_event-management-large.pdf",
     video: "https://www.youtube.com/watch?v=I-XjdcpfXoI",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -678,7 +679,7 @@ export default function CourseDetail() {
       "Uniforms z’abakozi",
       "Ibikoresho byo gusukura"
     ],
-    pdf: "/src/assets/IRFU_event-management-large.pdf",
+    pdf: "/pdfs/IRFU_event-management-large.pdf",
     video: "https://www.youtube.com/watch?v=I-XjdcpfXoI",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate" },
@@ -747,7 +748,7 @@ export default function CourseDetail() {
       "Dress forms and mannequins",
       "Finishing and ironing equipment"
     ],
-    pdf: "/src/assets/TAILORING_English.pdf",
+    pdf: "/pdfs/TAILORING_English.pdf",
     video: "https://www.youtube.com/watch?v=IGITrkYdjJs",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -814,7 +815,7 @@ export default function CourseDetail() {
       "Manekine n’ibikoresho byo gupima imyenda",
       "Ibikoresho byo kurangiza no kunoza imyenda (fer à repasser n’ibindi)"
     ],
-    pdf: "/src/assets/TAILORING_English.pdf",
+    pdf: "/pdfs/TAILORING_English.pdf",
     video: "https://www.youtube.com/watch?v=TJSP3HZpO2U",
     duration: "Amasaha 4",
     difficulty: "Abatangizi – Abasanzwe"
@@ -882,7 +883,7 @@ export default function CourseDetail() {
       "Measuring and marking tools",
       "Hardware (buckles, zippers, rivets, snaps)"
     ],
-    pdf: "/src/assets/B-to-B_English.pdf",
+    pdf: "/pdfs/B-to-B_English.pdf",
     video: "https://www.youtube.com/watch?v=CLPkVvI9yFg",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -949,7 +950,7 @@ export default function CourseDetail() {
       "Ibikoresho byo gupima no gushyiraho ibimenyetso",
       "Ibikoresho by’inyongera (amasaho, fermetures, rivets, snaps)"
     ],
-    pdf: "/src/assets/B-to-B_English.pdf",
+    pdf: "/pdfs/B-to-B_English.pdf",
     video: "https://www.youtube.com/watch?v=CLPkVvI9yFg",
     duration: "Amasaha 4",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -1016,7 +1017,7 @@ export default function CourseDetail() {
       "Polishing and finishing materials",
       "Storage and packaging materials"
     ],
-    pdf: "/src/assets/jewellery-making.pdf",
+    pdf: "/pdfs/jewellery-making.pdf",
     video: "https://www.youtube.com/watch?v=C4DCPjOknmU",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -1083,7 +1084,7 @@ export default function CourseDetail() {
       "Ibikoresho byo gusukura no kurangiza ibirimbo",
       "Ibikoresho byo kubika no gupfunyika ibirangiye"
     ],
-    pdf: "/src/assets/jewellery-making.pdf",
+    pdf: "/pdfs/jewellery-making.pdf",
     video: "https://www.youtube.com/watch?v=MGXYf2P6mK0",
     duration: "Amasaha 3",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -1150,7 +1151,7 @@ export default function CourseDetail() {
       "Sanding and finishing tools",
       "Safety equipment (gloves, goggles, masks)"
     ],
-    pdf: "/src/assets/Woodwork Step-by-Step.pdf",
+    pdf: "/pdfs/Woodwork Step-by-Step.pdf",
     video: "https://www.youtube.com/watch?v=m3CqH4DjVlI",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -1216,7 +1217,7 @@ export default function CourseDetail() {
       "Ibikoresho byo gusena no kunoza imbaho",
       "Ibikoresho by’umutekano (ga, amadarubindi, udupfukamunwa)"
     ],
-    pdf: "/src/assets/Woodwork Step-by-Step.pdf",
+    pdf: "/pdfs/Woodwork Step-by-Step.pdf",
     video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     duration: "Amasaha 4",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -1283,7 +1284,7 @@ export default function CourseDetail() {
       "Clamps and metal joining tools",
       "Finishing materials (paint, brushes, polish)"
     ],
-    pdf: "/src/assets/Welding for Dummies.pdf",
+    pdf: "/pdfs/Welding for Dummies.pdf",
     video: "https://www.youtube.com/watch?v=OWThL97tq3k",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -1349,7 +1350,7 @@ export default function CourseDetail() {
       "Ibyuma bifatisha n’ibifasha guhuza ibyuma",
       "Ibikoresho byo kurangiza (irangi, uburoso, polish)"
     ],
-    pdf: "/src/assets/Welding for Dummies.pdf",
+    pdf: "/pdfs/Welding for Dummies.pdf",
     video: "https://www.youtube.com/watch?v=OWThL97tq3k",
     duration: "Amasaha 4",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -1416,7 +1417,7 @@ export default function CourseDetail() {
       "Aprons and cleaning materials",
       "Safety equipment (gloves, masks)"
     ],
-    pdf: "/src/assets/ceramicbasics.pdf",
+    pdf: "/pdfs/ceramicbasics.pdf",
     video: "https://www.youtube.com/watch?v=wxh31J0k6PY",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -1483,7 +1484,7 @@ export default function CourseDetail() {
       "Amataburiya n’ibikoresho byo gusukura",
       "Ibikoresho by’umutekano (ga, udupfukamunwa)"
     ],
-    pdf: "/src/assets/ceramicbasics.pdf",
+    pdf: "/pdfs/ceramicbasics.pdf",
     video: "https://www.youtube.com/watch?v=wxh31J0k6PY",
     duration: "Amasaha 4",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -1543,7 +1544,7 @@ export default function CourseDetail() {
         ]
       }
     ],
-    pdf: "/src/assets/computerbasics.pdf",
+    pdf: "/pdfs/computerbasics.pdf",
     video: "https://www.youtube.com/watch?v=2MCmnr2L50o"
   },
   rw: {
@@ -1598,7 +1599,7 @@ export default function CourseDetail() {
         ]
       }
     ],
-    pdf: "/src/assets/computerbasics.pdf",
+    pdf: "/pdfs/computerbasics.pdf",
     video: "https://www.youtube.com/watch?v=2MCmnr2L50o" },
     },
     "graphic-design-video-editing": {
@@ -1655,7 +1656,7 @@ export default function CourseDetail() {
       "Color palettes, fonts, and design resources",
       "Stable internet connection"
     ],
-    pdf: "/src/assets/Basic-Guide-to-Video-Editing.pdf",
+    pdf: "/pdfs/Basic-Guide-to-Video-Editing.pdf",
     video: "https://www.youtube.com/watch?v=y7Ci_H9bYEk",
     duration: "5 hours",
     difficulty: "Beginner–Intermediate"
@@ -1713,7 +1714,7 @@ export default function CourseDetail() {
       "Amabara, fonts n’ibikoresho byo gushushanya",
       "Internet yihuta kandi ihamye"
     ],
-    pdf: "/src/assets/Basic-Guide-to-Video-Editing.pdf",
+    pdf: "/pdfs/Basic-Guide-to-Video-Editing.pdf",
     video: "https://www.youtube.com/watch?v=y7Ci_H9bYEk",
     duration: "Amasaha 5",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -1772,7 +1773,7 @@ export default function CourseDetail() {
       "Developer accounts for testing and deployment",
       "Notebook for coding notes and ideas"
     ],
-    pdf: "/src/assets/the-mobile-web-handbook.pdf",
+    pdf: "/pdfs/the-mobile-web-handbook.pdf",
     video: "https://www.youtube.com/watch?v=GxmfcnU3feo",
     duration: "6 hours",
     difficulty: "Beginner–Intermediate"
@@ -1830,7 +1831,7 @@ export default function CourseDetail() {
       "Konti z’abakora porogaramu (developer accounts) zo kugerageza no gushyira ku mbuga",
       "Igitabo cyangwa bloc-notes cyo kwandikamo ibitekerezo n’amategeko ya code"
     ],
-    pdf: "/src/assets/the-mobile-web-handbook.pdf",
+    pdf: "/pdfs/the-mobile-web-handbook.pdf",
     video: "https://www.youtube.com/watch?v=GxmfcnU3feo",
     duration: "Amasaha 6",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -1889,7 +1890,7 @@ export default function CourseDetail() {
       "Payment account (PayPal, Payoneer, or local method)",
       "Basic English communication skills"
     ],
-    pdf: "/src/assets/Freelancing.pdf",
+    pdf: "/pdfs/Freelancing.pdf",
     video: "https://www.youtube.com/watch?v=7vtlMRV1sxY",
     duration: "2 hours",
     difficulty: "Beginner"
@@ -1947,7 +1948,7 @@ export default function CourseDetail() {
       "Konti yo kwakiriraho amafaranga (PayPal, Payoneer, cyangwa indi y’imbere mu gihugu)",
       "Ubumenyi bw’ibanze mu kuvuga no kwandika Icyongereza"
     ],
-    pdf: "/src/assets/Freelancing.pdf",
+    pdf: "/pdfs/Freelancing.pdf",
     video: "https://www.youtube.com/watch?v=7vtlMRV1sxY",
     duration: "amasaha 2",
     difficulty: "Abatangizi"
@@ -2007,7 +2008,7 @@ export default function CourseDetail() {
       "Analytics tools or platform insights",
       "Stable internet connection"
     ],
-    pdf: "/src/assets/Social-Media-Marketing-Basics.pdf",
+    pdf: "/pdfs/Social-Media-Marketing-Basics.pdf",
     video: "https://www.youtube.com/watch?v=I2pwcAVonKI",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -2065,7 +2066,7 @@ export default function CourseDetail() {
       "Ibikoresho byo gusesengura uko imbuga zikora (analytics tools)",
       "Interineti yihuta kandi yizewe"
     ],
-    pdf: "/src/assets/Social-Media-Marketing-Basics.pdf",
+    pdf: "/pdfs/Social-Media-Marketing-Basics.pdf",
     video: "https://www.youtube.com/watch?v=I2pwcAVonKI",
     duration: "amasaha 3",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -2124,7 +2125,7 @@ export default function CourseDetail() {
       "Updated operating system and browser",
       "Reliable internet connection"
     ],
-    pdf: "/src/assets/cybersecurity.pdf",
+    pdf: "/pdfs/cybersecurity.pdf",
     video: "https://www.youtube.com/watch?v=ey4dXseAODE",
     duration: "2.5 hours",
     difficulty: "Beginner–Intermediate"
@@ -2182,7 +2183,7 @@ export default function CourseDetail() {
       "Sisitemu ikoresha n’umufatabiganiro (browser) bigezweho",
       "Interineti yizewe kandi yihuta"
     ],
-    pdf: "/src/assets/cybersecurity.pdf",
+    pdf: "/pdfs/cybersecurity.pdf",
     video: "https://www.youtube.com/watch?v=ey4dXseAODE",
     duration: "amasaha 2 n’igice",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -2243,7 +2244,7 @@ export default function CourseDetail() {
       "Pen and paper for brainstorming",
       "Motivation and creativity"
     ],
-    pdf: "/src/assets/business.pdf",
+    pdf: "/pdfs/business.pdf",
     video: "https://www.youtube.com/watch?v=wxyGeUkPYFM",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -2301,7 +2302,7 @@ export default function CourseDetail() {
       "Ikaramu n’impapuro byo gutekererezaho ibitekerezo",
       "Umwete n’ubushishozi"
     ],
-    pdf: "/src/assets/business.pdf",
+    pdf: "/pdfs/business.pdf",
     video: "https://www.youtube.com/watch?v=wxyGeUkPYFM",
     duration: "amasaha 3",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -2360,7 +2361,7 @@ export default function CourseDetail() {
       "Financial documents or mock data for practice",
       "Motivation to manage money responsibly"
     ],
-    pdf: "/src/assets/bookkeeping.pdf",
+    pdf: "/pdfs/bookkeeping.pdf",
     video: "https://www.youtube.com/watch?v=pKpdibyljR4",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -2418,7 +2419,7 @@ export default function CourseDetail() {
       "Impapuro cyangwa amakuru y’igerageza yo gukora imyitozo",
       "Umwete wo gucunga amafaranga mu buryo buboneye"
     ],
-    pdf: "/src/assets/bookkeeping.pdf",
+    pdf: "/pdfs/bookkeeping.pdf",
     video: "https://www.youtube.com/watch?v=pKpdibyljR4",
     duration: "amasaha 3",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -2461,7 +2462,7 @@ export default function CourseDetail() {
       "Pen and paper for note-taking",
       "Confidence and good communication attitude"
     ],
-    pdf: "/src/assets/sales marketing.pdf",
+    pdf: "/pdfs/sales marketing.pdf",
     video: "https://www.youtube.com/watch?v=ZYw52nVZl_0",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -2503,7 +2504,7 @@ export default function CourseDetail() {
       "Ikaramu n’impapuro byo kwandikaho",
       "Kwiyizera no kugira uburyo bwiza bwo kuvugana n’abakiriya"
     ],
-    pdf: "/src/assets/sales marketing.pdf.pdf",
+    pdf: "/pdfs/sales marketing.pdf.pdf",
     video: "https://www.youtube.com/watch?v=ZYw52nVZl_0",
     duration: "amasaha 3",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -2546,7 +2547,7 @@ export default function CourseDetail() {
       "Notebook for order and inventory tracking",
       "Graphic design tools for product presentation (e.g., Canva)"
     ],
-    pdf: "/src/assets/e-commerce-guide.pdf",
+    pdf: "/pdfs/e-commerce-guide.pdf",
     video: "https://www.youtube.com/watch?v=-_ReOcqS15g",
     duration: "3.5 hours",
     difficulty: "Beginner–Intermediate"
@@ -2588,7 +2589,7 @@ export default function CourseDetail() {
       "Igitabo cyo gukurikirana ibicuruzwa n’amategeko y’ibyo watanze",
       "Porogaramu zo gushushanya ibicuruzwa (nka Canva)"
     ],
-    pdf: "/src/assets/e-commerce-guide.pdf",
+    pdf: "/pdfs/e-commerce-guide.pdf",
     video: "https://www.youtube.com/watch?v=-_ReOcqS15g",
     duration: "amasaha 3 n’igice",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -2631,7 +2632,7 @@ export default function CourseDetail() {
       "Confidence and communication skills",
       "Internet connection for online networking"
     ],
-    pdf: "/src/assets/personal_brand_workbook.pdf",
+    pdf: "/pdfs/personal_brand_workbook.pdf",
     video: "https://www.youtube.com/watch?v=PkHbP3hX7XA",
     duration: "2.5 hours",
     difficulty: "Beginner–Intermediate"
@@ -2673,7 +2674,7 @@ export default function CourseDetail() {
       "Kwiyizera no kugira ubuhanga mu itumanaho",
       "Interineti yizewe yo gukoresha mu mbuga z’abanyamwuga"
     ],
-    pdf: "/src/assets/personal_brand_workbook.pdf",
+    pdf: "/pdfs/personal_brand_workbook.pdf",
     video: "https://www.youtube.com/watch?v=PkHbP3hX7XA",
     duration: "amasaha 2 n’igice",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -2722,7 +2723,7 @@ export default function CourseDetail() {
       "MIDI keyboard or controller (optional)",
       "External storage for saving projects"
     ],
-    pdf: "/src/assets/MakingMusic.pdf",
+    pdf: "/pdfs/MakingMusic.pdf",
     video: "https://www.youtube.com/watch?v=Hi72cCOPUQU",
     duration: "5 hours",
     difficulty: "Beginner–Intermediate"
@@ -2769,7 +2770,7 @@ export default function CourseDetail() {
       "MIDI keyboard cyangwa controller (si ngombwa cyane)",
       "Ububiko bwo hanze bwo kubika imishinga y’umuziki"
     ],
-    pdf: "/src/assets/MakingMusic.pdf",
+    pdf: "/pdfs/MakingMusic.pdf",
     video: "https://www.youtube.com/watch?v=Hi72cCOPUQU",
     duration: "amasaha 5",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -2820,7 +2821,7 @@ export default function CourseDetail() {
       "Pen, pencils, and markers for hand-drawn sketches",
       "Access to online tutorials or courses for learning techniques"
     ],
-    pdf: "/src/assets/GraphicDesigning.pdf",
+    pdf: "/pdfs/GraphicDesigning.pdf",
     video: "https://www.youtube.com/watch?v=Hi72cCOPUQU",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -2871,7 +2872,7 @@ export default function CourseDetail() {
       "Ikaramu n’amacrayon yo gushushanya",
       "Kugera ku masomo yo kuri interineti yo kwiga uburyo bwo gushushanya"
     ],
-    pdf: "/src/assets/GraphicDesigning.pdf",
+    pdf: "/pdfs/GraphicDesigning.pdf",
     video: "https://www.youtube.com/watch?v=Hi72cCOPUQU",
     duration: "amasaha 4",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -2930,7 +2931,7 @@ export default function CourseDetail() {
       "Dictionary and thesaurus (optional)",
       "Quiet and comfortable workspace"
     ],
-    pdf: "/src/assets/creative-writing.pdf",
+    pdf: "/pdfs/creative-writing.pdf",
     video: "https://www.youtube.com/watch?v=t5Z-Q1bg1tU",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -2989,7 +2990,7 @@ export default function CourseDetail() {
       "Igitabo cy’amagambo n’icy’amagambo ajyanye (dictionary na thesaurus, gusa si ngombwa cyane)",
       "Ahantu hatuje kandi heza ho kwandikira"
     ],
-    pdf: "/src/assets/creative-writing.pdf",
+    pdf: "/pdfs/creative-writing.pdf",
     video: "https://www.youtube.com/watch?v=t5Z-Q1bg1tU",
     duration: "amasaha 3",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -3056,7 +3057,7 @@ export default function CourseDetail() {
       "Notebook for planning content ideas",
       "Social media accounts for posting"
     ],
-    pdf: "/src/assets/content-creation.pdf",
+    pdf: "/pdfs/content-creation.pdf",
     video: "https://www.youtube.com/watch?v=-HrfqfDyqCQ",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -3123,7 +3124,7 @@ export default function CourseDetail() {
       "Igitabo cyo gutegura ibitekerezo by’amashusho",
       "Konti z’imbuga nkoranyambaga zo gushyiraho ibikurura abantu"
     ],
-    pdf: "/src/assets/content-creation.pdf",
+    pdf: "/pdfs/content-creation.pdf",
     video: "https://www.youtube.com/watch?v=-HrfqfDyqCQ",
     duration: "amasaha 4",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -3190,7 +3191,7 @@ export default function CourseDetail() {
       "Reference images and inspiration resources",
       "Notebook for planning ideas and concepts"
     ],
-    pdf: "/src/assets/nft-creation.pdf",
+    pdf: "/pdfs/nft-creation.pdf",
     video: "https://www.youtube.com/watch?v=XztEBPf4nKg",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -3257,7 +3258,7 @@ export default function CourseDetail() {
       "Amafoto y’icyitegererezo n’ibikoresho byo gufata amashusho",
       "Igitabo cyo gutegura ibitekerezo n’imishinga"
     ],
-    pdf: "/src/assets/nft-creation.pdf",
+    pdf: "/pdfs/nft-creation.pdf",
     video: "https://www.youtube.com/watch?v=XztEBPf4nKg",
     duration: "amasaha 4",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -3327,7 +3328,7 @@ export default function CourseDetail() {
       "Grow lights or access to natural light",
       "Notebook for monitoring plant growth"
     ],
-    pdf: "/src/assets/Gardening-in-sacks.pdf",
+    pdf: "/pdfs/Gardening-in-sacks.pdf",
     video: "https://www.youtube.com/watch?v=3JigXb9KXqI",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -3395,7 +3396,7 @@ export default function CourseDetail() {
       "Amatara yo kumurikira ibimera cyangwa ahantu hagera izuba",
       "Igitabo cyo gukurikirana uko ibimera byiyongera"
     ],
-    pdf: "/src/assets/Gardening-in-sacks.pdf",
+    pdf: "/pdfs/Gardening-in-sacks.pdf",
     video: "https://www.youtube.com/watch?v=3JigXb9KXqI",
     duration: "amasaha 4",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -3463,7 +3464,7 @@ export default function CourseDetail() {
       "Containers for honey storage",
       "Notebook for recording hive management and observations"
     ],
-    pdf: "/src/assets/beekeeping.pdf",
+    pdf: "/pdfs/beekeeping.pdf",
     video: "https://www.youtube.com/watch?v=on-xmXuSwv8",
     duration: "4.5 hours",
     difficulty: "Beginner–Intermediate"
@@ -3531,7 +3532,7 @@ export default function CourseDetail() {
       "Ibikombe byo kubikamo ubuki",
       "Igitabo cyo gukurikirana imicungire y’inzuki n’ibikorwa byazo"
     ],
-    pdf: "/src/assets/beekeeping.pdf",
+    pdf: "/pdfs/beekeeping.pdf",
     video: "https://www.youtube.com/watch?v=0xX9DyUJrT0",
     duration: "amasaha 4 n’igice",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -3599,7 +3600,7 @@ export default function CourseDetail() {
       "Notebook for tracking growth and observations",
       "Clean workspace for cultivation"
     ],
-    pdf: "/src/assets/mushroom-farming.pdf",
+    pdf: "/pdfs/mushroom-farming.pdf",
     video: "https://www.youtube.com/watch?v=Cp8Jc1GnDEo",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -3667,7 +3668,7 @@ export default function CourseDetail() {
       "Igitabo cyo gukurikirana uko ibihumyo bikura n’ibikorwa",
       "Ahantu hasukuye ho guhinga"
     ],
-    pdf: "/src/assets/mushroom-farming.pdf",
+    pdf: "/pdfs/mushroom-farming.pdf",
     video: "https://www.youtube.com/watch?v=Cp8Jc1GnDEo",
     duration: "amasaha 4",
     difficulty: "Abatangizi – Abasanzwe" },
@@ -3735,7 +3736,7 @@ export default function CourseDetail() {
       "Gloves and protective clothing",
       "Access to sunlight and suitable planting space"
     ],
-    pdf: "/src/assets/Vegetable Gardening.pdf",
+    pdf: "/pdfs/Vegetable Gardening.pdf",
     video: "https://www.youtube.com/watch?v=4GmyE8q_3w0",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -3803,7 +3804,7 @@ export default function CourseDetail() {
       "Imyambaro yo kwirinda",
       "Ahantu hafite izuba n’ubutaka bukwiriye bwo guteramo imboga"
     ],
-    pdf: "/src/assets/Vegetable Gardening.pdf",
+    pdf: "/pdfs/Vegetable Gardening.pdf",
     video: "https://www.youtube.com/watch?v=4GmyE8q_3w0",
     duration: "amasaha 4",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -3871,7 +3872,7 @@ export default function CourseDetail() {
       "Protective clothing and gloves",
       "Access to clean water and pasture"
     ],
-    pdf: "/src/assets/animal-husbandry.pdf",
+    pdf: "/pdfs/animal-husbandry.pdf",
     video: "https://www.youtube.com/watch?v=zSb_rtZQb00",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -3939,7 +3940,7 @@ export default function CourseDetail() {
       "Imyambaro yo kwirinda",
       "Amazi meza n’ibitunga amatungo"
     ],
-    pdf: "/src/assets/animal-husbandry.pdf",
+    pdf: "/pdfs/animal-husbandry.pdf",
     video: "https://www.youtube.com/watch?v=zSb_rtZQb00",
     duration: "amasaha 4",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -4016,7 +4017,7 @@ export default function CourseDetail() {
       "Thermometer and basic medical tools",
       "Access to video tutorials for practical demonstration"
     ],
-    pdf: "/src/assets/Basic_First_Aid.pdf",
+    pdf: "/pdfs/Basic_First_Aid.pdf",
     video: "https://www.youtube.com/watch?v=f2_oj5toBlI",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -4090,7 +4091,7 @@ export default function CourseDetail() {
       "Agapimabushyuhe n’ibikoresho by’ubuvuzi byoroheje",
       "Uburyo bwo kureba amashusho y’amahugurwa (video tutorials)"
     ],
-    pdf: "/src/assets/Basic_First_Aid.pdf",
+    pdf: "/pdfs/Basic_First_Aid.pdf",
     video: "https://www.youtube.com/watch?v=f2_oj5toBlI",
     duration: "amasaha 3",
     difficulty: "Abatangizi – Abasanzwe"
@@ -4159,7 +4160,7 @@ export default function CourseDetail() {
       "Apron and gloves",
       "Access to clean water and cooking space"
     ],
-    pdf: "/src/assets/Cooking-Basics.pdf",
+    pdf: "/pdfs/Cooking-Basics.pdf",
     video: "https://www.youtube.com/watch?v=aopS3q6f1GY",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -4227,7 +4228,7 @@ export default function CourseDetail() {
       "Apron cyangwa itaburiya",
       "Amazi meza n’ahantu ho gutekera"
     ],
-    pdf: "/src/assets/Cooking-Basics.pdf",
+    pdf: "/pdfs/Cooking-Basics.pdf",
     video: "https://www.youtube.com/watch?v=aopS3q6f1GY",
     duration: "amasaha 3",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -4294,7 +4295,7 @@ export default function CourseDetail() {
       "Support network or access to counseling services",
       "Stress-relief tools (stress ball, relaxation music, etc.)"
     ],
-    pdf: "/src/assets/mental_health_awareness.pdf",
+    pdf: "/pdfs/mental_health_awareness.pdf",
     video: "https://www.youtube.com/watch?v=NQcYZplTXnQ",
     duration: "3 hours",
     difficulty: "Beginner"
@@ -4361,7 +4362,7 @@ export default function CourseDetail() {
       "Umuryango muterankunga cyangwa uburyo bwo kuganira n’inzobere mu buzima bwo mu mutwe",
       "Ibikoresho byo kugabanya stress (stress ball, umuziki utuje, n’ibindi)"
     ],
-    pdf: "/src/assets/mental_health_awareness.pdf",
+    pdf: "/pdfs/mental_health_awareness.pdf",
     video: "https://www.youtube.com/watch?v=NQcYZplTXnQ",
     duration: "amasaha 3",
     difficulty: "Abatangizi"},
@@ -4437,7 +4438,7 @@ export default function CourseDetail() {
       "First aid kit for safety",
       "Heart rate monitor or smartwatch (optional)"
     ],
-    pdf: "/src/assets/homeworkout.pdf",
+    pdf: "/pdfs/homeworkout.pdf",
     video: "https://www.youtube.com/watch?v=rwAHQ_vH-f8",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -4512,7 +4513,7 @@ export default function CourseDetail() {
       "Porogaramu cyangwa videwo z’imyitozo kuri interineti",
       "Agakapu k’ubufasha bw’ibanze (first aid kit)",
     ],
-    pdf: "/src/assets/homeworkout.pdf",
+    pdf: "/pdfs/homeworkout.pdf",
     video: "https://www.youtube.com/watch?v=rwAHQ_vH-f8",
     duration: "amasaha 4",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -4582,7 +4583,7 @@ export default function CourseDetail() {
       "Protective gloves and goggles",
       "Notebook for recording recipes and techniques"
     ],
-    pdf: "/src/assets/Soapmaking.pdf",
+    pdf: "/pdfs/Soapmaking.pdf",
     video: "https://www.youtube.com/watch?v=lBc-dWQmFIM",
     duration: "3.5 hours",
     difficulty: "Beginner–Intermediate"
@@ -4649,7 +4650,7 @@ export default function CourseDetail() {
       "Amadarubindi n'ibindi bikoresho by'ubwirinzi",
       "Igitabo cyo kwandikamo uburyo bwo gukora n’amasomo"
     ],
-    pdf: "/src/assets/Soapmaking.pdf",
+    pdf: "/pdfs/Soapmaking.pdf",
     video: "https://www.youtube.com/watch?v=lBc-dWQmFIM",
     duration: "amasaha 3 n’igice",
     difficulty: "Abatangizi – Abasanzwe"
@@ -4711,7 +4712,7 @@ export default function CourseDetail() {
       "Notebook for recipes and design ideas",
       "Protective gloves and apron"
     ],
-    pdf: "/src/assets/Candle Making.pdf",
+    pdf: "/pdfs/Candle Making.pdf",
     video: "https://www.youtube.com/watch?v=jJWl9Kpwbno",
     duration: "3.5 hours",
     difficulty: "Beginner–Intermediate"
@@ -4771,7 +4772,7 @@ export default function CourseDetail() {
       "Igitabo cyo kwandikamo recipes n’ibitekerezo by’ubushushanyo",
       "Amataburiya n’apron byo kurinda"
     ],
-    pdf: "/src/assets/Candle Making.pdf",
+    pdf: "/pdfs/Candle Making.pdf",
     video: "https://www.youtube.com/watch?v=jJWl9Kpwbno",
     duration: "amasaha 3 n’igice",
     difficulty: "Abatangizi – Abasanzwe"
@@ -4833,7 +4834,7 @@ export default function CourseDetail() {
       "Notebook for recipes and notes",
       "Protective gloves and apron"
     ],
-    pdf: "/src/assets/jams-and-jellies.pdf",
+    pdf: "/pdfs/jams-and-jellies.pdf",
     video: "https://www.youtube.com/watch?v=Os6225I_Lco",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -4892,7 +4893,7 @@ export default function CourseDetail() {
       "Igitabo cyo kwandika recipes n’inyandiko",
       "Amataburiya n’apron yo kurinda"
     ],
-    pdf: "/src/assets/jams-and-jellies.pdf",
+    pdf: "/pdfs/jams-and-jellies.pdf",
     video: "https://www.youtube.com/watch?v=Os6225I_Lco",
     duration: "amasaha 3",
     difficulty: "Abatangizi – Abasanzwe"
@@ -4954,7 +4955,7 @@ export default function CourseDetail() {
       "Notebook for recipes and color notes",
       "Surface materials to paint on (paper, wood, canvas, etc.)"
     ],
-    pdf: "/src/assets/Nature-Paints-Guide.pdf",
+    pdf: "/pdfs/Nature-Paints-Guide.pdf",
     video: "https://www.youtube.com/watch?v=bxsESte6dJ0",
     duration: "3 hours",
     difficulty: "Beginner–Intermediate"
@@ -5014,7 +5015,7 @@ export default function CourseDetail() {
       "Igitabo cyo kwandika recipes n’amabara",
       "Ibikoresho byo gusigaho amabara (impapuro, ibiti, canvas, n’ibindi)"
     ],
-    pdf: "/src/assets/Nature-Paints-Guide.pdf",
+    pdf: "/pdfs/Nature-Paints-Guide.pdf",
     video: "https://www.youtube.com/watch?v=bxsESte6dJ0",
     duration: "amasaha 3",
     difficulty: "Abatangizi – Abasanzwe"
@@ -5077,7 +5078,7 @@ export default function CourseDetail() {
       "Protective gloves and apron",
       "Notebook for recording recipes and techniques"
     ],
-    pdf: "/src/assets/The-Natural-Beauty.pdf",
+    pdf: "/pdfs/The-Natural-Beauty.pdf",
     video: "https://www.youtube.com/watch?v=wudfkTQ5Se0",
     duration: "4 hours",
     difficulty: "Beginner–Intermediate"
@@ -5137,7 +5138,7 @@ export default function CourseDetail() {
       "Amataburiya n’apron yo kurinda",
       "Igitabo cyo kwandikamo recipes n’uburyo bwo gukora"
     ],
-    pdf: "/src/assets/The-Natural-Beauty.pdf",
+    pdf: "/pdfs/The-Natural-Beauty.pdf",
     video: "https://www.youtube.com/watch?v=wudfkTQ5Se0",
     duration: "amasaha 4",
     difficulty: "Abatangizi – Abasanzwe"},
@@ -5261,17 +5262,15 @@ export default function CourseDetail() {
           ))}
         </ul>
       </div>
-<div className="learn-btn text-center mb-4">
-        <a
-          href="/experts" // Replace with your actual store link
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
-        >
-          {language === "en" ? "Learn this course as profession" : "Iga iri somo byimbitse"}
-        </a>
-      </div>
 
+<div className="learn-btn text-center mb-4">
+  <Link
+    to="/experts" // client-side routing handled
+    className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+  >
+    {language === "en" ? "Learn this course as profession" : "Iga iri somo byimbitse"}
+  </Link>
+</div>
       {/* PDF */}
       {courseData.pdf && (
         <a
