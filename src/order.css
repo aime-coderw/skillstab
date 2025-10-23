@@ -1,0 +1,59 @@
+.order-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.order-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.order-form input,
+.order-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-form button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-form button:hover {
+  background-color: #e65c00;
+}
+
+.status {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/* Language toggle button */
+.order-page .lang-switcher {
+  background-color: #007bff; /* blue button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-page .lang-switcher:hover {
+  background-color: #0056b3; /* darker blue on hover */
+}
+
+/* Optional: position top-right inside container */
+.order-page .lang-switcher-container {
+  text-align: right;
+  margin-bottom: 15px;
+}

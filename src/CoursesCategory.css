@@ -1,0 +1,165 @@
+.courses-category-container {
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px; /* for Navbar */
+}
+
+.courses-category-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.course-card {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.course-card p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #e9ecef;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #007bff, #00c9a7);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.course-card button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.course-card button:hover {
+  background: #0056b3;
+}
+.ad-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(217, 237, 239, 0.6);
+  backdrop-filter: blur(6px);
+  padding: 28px;
+  gap: 24px;
+  max-width: 1500px;
+  margin: 36px auto;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.08);
+}
+
+.slideshow {
+  width: 35%;
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.ad-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 800ms ease, transform 800ms ease;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
+}
+
+.ad-slide.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Ad text column */
+.ad-text {
+  width: 40%;
+  padding: 6px 8px;
+}
+
+.ad-text h2 {
+  font-size: 1.5rem;
+  color: #1521cc;
+  margin-bottom: 8px;
+}
+.title-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+}
+
+.title-with-logo img {
+  height: 1.2em; /* makes it match the text height */
+}
+.ad-text p {
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.ad-text button {
+  background: #141288;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.ad-text button:hover {
+  transform: translateY(-3px);
+  background: #1a1b84;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .ad-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .slideshow, .ad-text { width: 100%; }
+  .slideshow { height: 200px; }
+  .ad-text { text-align: center; }
+}

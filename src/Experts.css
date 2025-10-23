@@ -1,0 +1,85 @@
+.experts-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 25px 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.experts-container h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.experts-container p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.experts-form input,
+.experts-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.experts-form input:focus,
+.experts-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.experts-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.experts-form button:hover {
+  background-color: #0056b3;
+}
+
+.status {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.language-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.toggle-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
