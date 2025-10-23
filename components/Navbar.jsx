@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"; // ✅ import Link
 import "./Navbar.css";
 import { useLanguage } from "../src/LanguageContext";
 
@@ -12,19 +13,19 @@ export default function Navbar() {
         <div className="nav-logo">SkillsTab</div>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><a href="/">{lang === "en" ? "Home" : "Ahabanza"}</a></li>
-          <li><a href="/courses">{lang === "en" ? "Courses" : "Amasomo"}</a></li>
-          <li><a href="/store">{lang === "en" ? "ToolKit Store" : "Ububiko bw'Ibikenewe"}</a></li>
-          <li><a href="/contact">{lang === "en" ? "Contact" : "Twandikire"}</a></li>
-          <li><a href="/dashboard">{lang === "en" ? "Account" : "Konti"}</a></li>
+          <li><Link to="/">{lang === "en" ? "Home" : "Ahabanza"}</Link></li>
+          <li><Link to="/courses">{lang === "en" ? "Courses" : "Amasomo"}</Link></li>
+          <li><Link to="/store">{lang === "en" ? "ToolKit Store" : "Ububiko bw'Ibikenewe"}</Link></li>
+          <li><Link to="/contact">{lang === "en" ? "Contact" : "Twandikire"}</Link></li>
+          <li><Link to="/dashboard">{lang === "en" ? "Account" : "Konti"}</Link></li>
           <li>
-            <a href="/signup">
+            <Link to="/signup">
               <button className="join-btn">
                 {lang === "en" ? "Join Now" : "Injira Ubu"}
               </button>
-            </a>
+            </Link>
           </li>
-           <li><a href="/experts">{lang === "en" ? "Learn from Experts" : "Igishwa n'inzobere"}</a></li>
+          <li><Link to="/experts">{lang === "en" ? "Learn from Experts" : "Igishwa n'inzobere"}</Link></li>
         </ul>
 
         {/* 🌍 Language Toggle */}
