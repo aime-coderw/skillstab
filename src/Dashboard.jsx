@@ -88,7 +88,7 @@ export default function Dashboard() {
                     : "Urugero rw'Impamyabumenyi"}
                 </p>
                 <img
-                  src="/src/assets/sample cert.png"
+                  src="/pdfs/sample cert.png"
                   alt="Certificate Template"
                   className="template-img"
                 />
