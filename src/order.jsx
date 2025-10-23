@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { supabase } from "./supabaseClient"; 
+import { supabase } from "./SupabaseClient.js"; 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./order.css";
