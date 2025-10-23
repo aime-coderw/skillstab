@@ -12,10 +12,10 @@ export default function Dashboard() {
   const [certificates, setCertificates] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  if (!user) {
-    window.location.href = "/login";
-    return null;
-  }
+if (!user) {
+    return <Navigate to="/login" replace />;
+}
+
 
   useEffect(() => {
     fetchCertificates();
