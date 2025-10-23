@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { supabase } from "./supabaseClient.js";
+import { supabase } from "./SupabaseClient.js";
 import "./Signup.css";
 
 export default function Signup() {
