@@ -23,7 +23,7 @@ export default function Signup() {
         email,
         password,
         options: {
-          emailRedirectTo: "https://yourwebsite.com/login", // change to your domain
+          emailRedirectTo: "https://skillstab.vercel.app", // change to your domain
         },
       });
 
