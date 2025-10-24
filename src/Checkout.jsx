@@ -24,7 +24,7 @@ export default function Checkout() {
   const user = JSON.parse(localStorage.getItem("user"));
 
   const subtotal = cart.reduce((acc, item) => acc + item.price * item.qty, 0);
-  const tax = subtotal * 0.1;
+  const tax = subtotal * 0.02;
   const total = subtotal + tax;
 
   const handleSubmit = async () => {
@@ -106,14 +106,14 @@ export default function Checkout() {
           <ul>
             {cart.map((item) => (
               <li key={item.id}>
-                {item.name} x {item.qty} = ${(item.price * item.qty).toFixed(2)}
+                {item.name} x {item.qty} = ${(item.price * item.qty).toFixed()}
               </li>
             ))}
           </ul>
-          <p>Subtotal: ${subtotal.toFixed(2)}</p>
-          <p>Tax (10%): ${tax.toFixed(2)}</p>
+          <p>Subtotal: ${subtotal.toFixed()}</p>
+          <p>Tax (10%): ${tax.toFixed()}</p>
           <p>
-            <strong>Total: ${total.toFixed(2)}</strong>
+            <strong>Total: ${total.toFixed()}</strong>
           </p>
         </div>
 
