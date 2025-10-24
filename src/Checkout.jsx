@@ -111,7 +111,7 @@ export default function Checkout() {
             ))}
           </ul>
           <p>Subtotal: ${subtotal.toFixed()}</p>
-          <p>Tax (10%): ${tax.toFixed()}</p>
+          <p>Transport fee: ${tax.toFixed()}</p>
           <p>
             <strong>Total: ${total.toFixed()}</strong>
           </p>
