@@ -5200,15 +5200,13 @@ export default function CourseDetail() {
 
       {/* Get Ingredients Button */}
       <div className="get-ingredients-btn text-center mb-4">
-        <a
-          href="/store" // Replace with your actual store link
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
-        >
-          {language === "en" ? "Get Ingredients" : "Bona ibikenewe"}
-        </a>
-      </div>
+  <Link
+    to="/store" // ✅ internal routing (no page reload)
+    className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+  >
+    {language === "en" ? "Get Ingredients" : "Bona ibikenewe"}
+  </Link>
+</div>
 
       <h2>{courseData.title}</h2>
 

@@ -4,18 +4,18 @@ import "./Dashboard.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useLanguage } from "./LanguageContext";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom"; // ✅ Add Navigate
 
 export default function Dashboard() {
-  const { lang, toggleLanguage } = useLanguage(); // ✅ include toggleLanguage
+  const { lang, toggleLanguage } = useLanguage();
   const user = JSON.parse(localStorage.getItem("user"));
   const [certificates, setCertificates] = useState([]);
   const [loading, setLoading] = useState(true);
 
-if (!user) {
+  // ✅ Redirect if user not logged in
+  if (!user) {
     return <Navigate to="/login" replace />;
-}
-
+  }
 
   useEffect(() => {
     fetchCertificates();
@@ -44,7 +44,6 @@ if (!user) {
     <>
       <Navbar />
 
-      {/* ✅ Language toggle */}
       <div className="lang-toggle" style={{ textAlign: "right", margin: "10px" }}>
         <button onClick={toggleLanguage}>
           {lang === "en" ? "Kinyarwanda" : "English"}
@@ -77,11 +76,13 @@ if (!user) {
                   ? "To get your SkillsTab certificate, you must Learn from an Expert."
                   : "Kugira ngo ubone impamyabumenyi ya SkillsTab, ugomba kuba warigishijwe n'inzobere."}
               </p>
+
               <Link to="/experts">
-  <button className="experts-btn">
-    {lang === "en" ? "Learn from Experts" : "Igishwa n'inzobere"}
-  </button>
-</Link>
+                <button className="experts-btn">
+                  {lang === "en" ? "Learn from Experts" : "Igishwa n'inzobere"}
+                </button>
+              </Link>
+
               <div className="certificate-template">
                 <p>
                   {lang === "en"
